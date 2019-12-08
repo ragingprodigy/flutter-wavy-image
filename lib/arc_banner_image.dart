@@ -16,6 +16,7 @@ class ArcBannerImage extends StatelessWidget {
         height: 230.0,
         fit: BoxFit.cover,
       ),
+      clipper: ArcClipper(),
     );
   }
 }
