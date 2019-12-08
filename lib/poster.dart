@@ -14,8 +14,8 @@ class Poster extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      borderRadius: BorderRadius.circular(24),
       elevation: 2,
+      borderRadius: BorderRadius.circular(4),
       child: Image.asset(
         posterUrl,
         height: height,
