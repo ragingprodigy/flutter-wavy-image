@@ -48,10 +48,13 @@ class MovieInfo extends StatelessWidget {
 
   List<Widget> _buildCategoryChips(TextTheme textTheme) => movie.categories
       .map(
-        (String category) => Chip(
-          label: Text(category),
-          labelStyle: textTheme.caption,
-          backgroundColor: Colors.black12,
+        (String category) => Padding(
+          padding: EdgeInsets.only(right: 8.0),
+          child: Chip(
+            label: Text(category),
+            labelStyle: textTheme.caption,
+            backgroundColor: Colors.black12,
+          ),
         ),
       )
       .toList();
